@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>walidacja_1</title>
+</head>
+<body>
+  <p>Uczeń:</p>
+  <hr>
+  <form id="formularz" onsubmit="walidacja()">
+    <table>
+      <tr>
+        <td>
+          <label for="imie">Imię i nazwisko:</label>
+        </td>
+        <td>
+          <input type="text" id="imie" name="imie" placeholder="Imię Nazwisko" required>*
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="email">E-mail:</label>
+        </td>
+        <td>
+          <input type="email" id="email" name="email" placeholder="me@domain.com" required>*
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="ocena">Ocena:</label>
+        </td>
+        <td>
+          <input type="text" id="ocena" name="ocena" placeholder="1-6" required>*
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="data">Data:</label>
+        </td>
+        <td>
+          <input type="date" id="data" name="data" required>*
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" value="Wyślij">
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <hr>
+  <p>
+    Uwaga!<br>
+    Pola oznaczone * są obowiązkowe!
+  </p>
+  <script src="walidacja.js"></script>
+</body>
+</html>
